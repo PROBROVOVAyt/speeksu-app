@@ -19,6 +19,7 @@
     "build:win:signed": "yarn build:win && yarn sign:win"
   },
   "dependencies": {
+    "@hugeicons/react": "^1.0.3",
     "@tailwindcss/vite": "^4.0.3",
     "@tauri-apps/api": "^2.2.0",
     "@tauri-apps/plugin-opener": "^2",
