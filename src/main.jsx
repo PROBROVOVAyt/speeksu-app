@@ -5,7 +5,6 @@ import "./index.css";
 // Path "/"
 import Home from "./Home";
 // Path "/Auth/"
-import AuthPage from "./Page/Auth/AuthPage";
 import LoginPage from "./Page/Auth/LoginPage";
 import RegisterPage from "./Page/Auth/RegisterPage";
 
@@ -16,8 +15,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route index element={<Home />} />
 
         <Route path="auth">
-          <Route index element={<AuthPage />} />
-          <Route path="login" element={<LoginPage />} />
+          <Route index element={<LoginPage />} />
+          <Route index path="login" element={<LoginPage />} />
           <Route path="register" element={<RegisterPage />} />
         </Route>
       </Routes>
