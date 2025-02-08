@@ -13,8 +13,8 @@
     "dev:ios": "yarn tauri ios dev",
     "dev:all": "concurrently \"yarn dev:win\" \"yarn dev:android\"",
     "build:win": "yarn tauri build --target x86_64-pc-windows-msvc",
-    "build:linux": "yarn tauri build --target linux",
-    "build:android": "yarn tauri build --target android",
+    "build:linux": "yarn tauri build --target x86_64-unknown-linux-gnu",
+    "build:android": "yarn tauri android build --apk",
     "sign:win": "signtool sign /f C:/PBV-Studio.pfx /p 13553155 /fd SHA256 /tr http://timestamp.digicert.com /td SHA256 src-tauri/target/x86_64-pc-windows-msvc/release/*.exe",
     "build:win:signed": "yarn build:win && yarn sign:win"
   },
